@@ -1,4 +1,6 @@
-f=open('foo.txt','a+')
-f.write('\nThis will be appended\n')
-f.write('This too')
+f=open('data5.txt','w')
+for _ in range(5):
+    n= input("input number : ")
+    f.write(n)
+    f.write('\n')
 f.close()
