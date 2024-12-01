@@ -1,6 +1,4 @@
-f=open("numbers.txt",'r')
-i=0
-for i in range(4):
-    s=f.readline().rstrip()
-    print(s)
+f=open('foo.txt','a+')
+f.write('\nThis will be appended\n')
+f.write('This too')
 f.close()
