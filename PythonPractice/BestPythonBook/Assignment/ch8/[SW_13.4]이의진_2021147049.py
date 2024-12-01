@@ -1,4 +1,4 @@
-file_path = '/PythonPractice/BestPythonBook/Assignment/ch13/context.txt'
+file_path = '/PythonPractice/BestPythonBook/Assignment/ch8/context.txt'
 def analyze_sentence(sentence):
     sentence = sentence.strip()
     print(sentence)
