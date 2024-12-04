@@ -1,23 +1,15 @@
-def adult_func(n):
-    if n>= 19:
+list=[-30,45,-5,-90,20,53,77,-36]
+def minus_func(n):
+    if n<0:
         return True
     else:
         return False
 
-ages=[34,39,20,18,13,54]
-print('성년 리스트 : ')
-for a in filter(adult_func,ages):
-    print(a,end=' ')
+lst = []
+for n in list:
+    if minus_func(n):
+        lst.append(n)
 
-ages=[34,39,20,18,13,54]
-print('성년 리스트 : ')
-for a in filter(lambda x: x>=19,ages):
-    print(a,end =' ')
+print(lst)
 
-ages=[34,39,20,18,13,54]
-adult_ages = list(filter(lambda x:x>=19,ages))
-print(adult_ages)
 
-ages=[34,39,20,18,13,54]
-adult_ages1=list(filter(lambda x:x>=19,ages))
-print(adult_ages1)
