@@ -1,8 +1,4 @@
-def adult_func(n):
-    if n>=19:
-        return True
-    else:
-        return False
+adult_func=lambda n: n>=19
 ages =[34,32,29,18,13,54]
 for a in filter(adult_func,ages):
     print(a,end=' ')
