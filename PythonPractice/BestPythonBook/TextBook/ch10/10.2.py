@@ -1,15 +1,10 @@
-list=[-30,45,-5,-90,20,53,77,-36]
-def minus_func(n):
-    if n<0:
+def adult_func(n):
+    if n>=19:
         return True
     else:
         return False
+ages =[34,32,29,18,13,54]
+for a in filter(adult_func,ages):
+    print(a,end=' ')
 
-lst = []
-for n in list:
-    if minus_func(n):
-        lst.append(n)
-
-print(lst)
-
-
+    #filter(적용할 함수, 적용할 대상)
