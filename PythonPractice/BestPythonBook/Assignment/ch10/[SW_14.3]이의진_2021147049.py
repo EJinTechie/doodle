@@ -1,4 +1,4 @@
-a_list=list(input("소문자 입력 : "))
+a_list=list(input("소문자 입력 : ").split())
 
 def to_upper(x):
     return x.upper()
