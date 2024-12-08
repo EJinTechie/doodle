@@ -1,6 +1,21 @@
-adult_func=lambda n: n>=19
-ages =[34,32,29,18,13,54]
-for a in filter(adult_func,ages):
-    print(a,end=' ')
+# def minus_func(n):
+#     if n<0:
+#         return True
+#     else:
+#         return False
 
-    #filter(적용할 함수, 적용할 대상)
+n_list=[-30,-29,15,34,-34,-76]
+#n_list1=[]
+#for n in n_list:
+#    if minus_func(n):
+#        n_list1.append(n)
+#print(n_list1)
+
+minus_list=[]
+n_function=lambda n : n<0
+for n in filter(n_function,n_list):
+    minus_list.append(n)
+print(minus_list)
+# n_function=lambda n: n<0
+# n_list1=list(filter(n_function,n_list))
+# print(n_list1)
