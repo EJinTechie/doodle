@@ -1,6 +1,8 @@
-adult_func=lambda n: n>=19
-ages =[34,32,29,18,13,54]
-for a in filter(adult_func,ages):
-    print(a,end=' ')
+n_list =[1,2,3,4,5,6,7,8,9,10]
+even_list=[]
+for a in filter(lambda x:x%2==0,n_list):
+    even_list.append(a)
+print(even_list)
 
-    #filter(적용할 함수, 적용할 대상)
+even_list=list(filter(lambda  x: x%2 ==0,n_list))
+print(even_list)
