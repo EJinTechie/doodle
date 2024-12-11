@@ -1,29 +1,28 @@
-name = ['카페아메리카노','돌체라떼','카페모카','화이트초코모카']
-code = ['CA', 'DL', 'CM', 'WM']
-price = [4500, 5900, 5500, 5900]
-cnt = [0, 0, 0, 0]
-total=[0, 0, 0, 0]
-order = 'hi'
-while order != 'Q':
-    order = input('주문 코드 입력 : ')
-    if order == 'CA':
-        print(f"주문하신 음료는 {name[0]} 이고, 가격은 {price[0]}")
-        cnt[0]+=1
-        total[0]+=1
-    if order == 'DL':
-        print(f"주문하신 음료는 {name[1]} 이고, 가격은 {price[1]}")
-        cnt[1]+=1
-        total[1]+=1
-    if order == 'CM':
-        print(f"주문하신 음료는 {name[2]} 이고, 가격은 {price[2]}")
-        cnt[2]+=1
-        total[2]+=1
-    if order == 'WM':
-        print(f"주문하신 음료는 {name[3]} 이고, 가격은 {price[3]}")
-        cnt[3]+=1
-        total[3]+=1
+alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm']
+c_alpha1=alpha[1:-1]
+c_alpha2=alpha[::-1]
+c_alpha3=alpha[::3]
+c_alpha4=alpha[-1::-3]
+c_alpha5=alpha[2::3]
+c_alpha6=alpha[-5::-3]
 
-print(f"{name[0]}  {cnt[0]}  {4500*total[0]}")
-print(f"{name[1]}  {cnt[1]}  {5900*total[1]}")
-print(f"{name[2]}  {cnt[2]}  {5500*total[2]}")
-print(f"{name[3]}  {cnt[3]}  {5900*total[3]}")
+print(c_alpha1)
+print(c_alpha2)
+print(c_alpha3)
+print(c_alpha4)
+print(c_alpha5)
+print(c_alpha6)
+
+s_alpha1=''.join(c_alpha1)
+s_alpha2=''.join(c_alpha2)
+s_alpha3=''.join(c_alpha3)
+s_alpha4=''.join(c_alpha4)
+s_alpha5=''.join(c_alpha5)
+s_alpha6=''.join(c_alpha6)
+
+print(s_alpha1)
+print(s_alpha2)
+print(s_alpha3)
+print(s_alpha4)
+print(s_alpha5)
+print(s_alpha6)
